@@ -5,7 +5,7 @@ public class E01VariableAssignment {
 	//by changing the variable assignment statement
 	public static void main(String[] args) {
 		int score;
-		score = 4;
+		score = 6;
 		System.out.println(score);
 
 		double price = 23.25;

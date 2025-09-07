@@ -5,7 +5,14 @@ public class E08PizzaCalculator {
 
 	//https://131text.com/ns/books/published/csjava/Module1-Types-and-Names/topic-1-4-assignment.html#flowcharting
 	public static void main(String[] args) {
-		int pizzaSlices, numPeople, slicesPerPerson, leftoverSlices;
+		int pizzaSlices = 16;
+		int numPeople = 5;
+		int slicesPerPerson = pizzaSlices/numPeople;
+		int leftoverSlices = pizzaSlices % numPeople;
+		System.out.println("Each person gets " + slicesPerPerson + " slices of pizza and there is " + leftoverSlices );
+		System.out.println(" slice remaining.");
+
+
 		//add your code
 
 	}
