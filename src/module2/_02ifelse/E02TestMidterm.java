@@ -13,8 +13,7 @@ public class E02TestMidterm {
 		boolean passedExam = scan.nextBoolean();
 		if (passedExam) {
 			System.out.println("Good job studying!");
-		}
-		if (!passedExam) {
+		} else {
 			System.out.println("Study harder next time.");
 		}
 	}

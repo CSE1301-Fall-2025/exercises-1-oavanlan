@@ -9,12 +9,17 @@ public class E04PizzaCalculatorInput {
     public static void main(String[] args) {
         int pizzaSlices, numPeople, slicesPerPerson, leftoverSlices;
         Scanner scan = new Scanner(System.in);
+        System.out.println("How many slices of pizza are there?");
         pizzaSlices = scan.nextInt();
+        System.out.println("How many people are sharing the pizza?");
         numPeople = scan.nextInt();
-        slicesPerPerson = pizzaSlices / numPeople;
-        leftoverSlices = pizzaSlices % numPeople;
-        System.out.println(slicesPerPerson);
-        System.out.println(leftoverSlices);
+        if (numPeople>0) {
+            slicesPerPerson = pizzaSlices / numPeople;
+            leftoverSlices = pizzaSlices % numPeople;
+            System.out.println("Each person gets " + slicesPerPerson + " slice(s) of pizza.");
+            System.out.println("There are " + leftoverSlices + " leftover slices.");
+        } else {
+            System.out.println("There is no one eating pizza :(");
+        }
     }
-
 }
